@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "peydaMedium";
+    src: url(font/Peyda-Medium.ttf);
+}
+@font-face {
+    font-family: "peydaBold";
+    src: url(font/Peyda-Bold.ttf);
+}
+body {
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-right: 60px;
+    align-items: center;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    background-color: none;
+    width: 10px;
+    margin: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4a4949; 
+    border-radius: 10px;
+  }
+.scrollProgress{
+    background-color: #f5ab35;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8px;
+    animation: scrollProgress linear;
+    animation-timeline: scroll();
+    z-index: 100;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@keyframes scrollProgress{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.page{
+    position: relative;
+    top: 180px;
+    width: 70%;
+    display: block;
+    height: fit-content;
+    padding: 15px;
+    background-color: #dddddd;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+}
+.page .profile{
+    height: 100px;
+    border-radius: 50%;
+    width: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.page .img{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    cursor: pointer;
+}
