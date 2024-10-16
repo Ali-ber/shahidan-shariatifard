@@ -771,3 +771,11 @@ select#Admins{
   justify-content: center;
   z-index: 10;
 }
+.titleContent .buttonimg{
+  height: 32px;
+  justify-content: center;
+  background-color: #0caf2f;
+}
+.titleContent .buttonimg img{
+  margin: 0 auto;
+}
