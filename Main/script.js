@@ -10,12 +10,12 @@ themeToggle.checked = false;
 checkbox.checked = false;
 function toggleMenu() {
     if (checkbox.checked == false) {
-        menuHeader.style.width = "60px";
+        menuHeader.style.translate = "0 500px";
         backMenuHeader.style.backgroundColor = "none";
         backMenuHeader.style.transition = "all 0.75s";
         backMenuHeader.style.display = "none";
     }else{
-        menuHeader.style.width = "140px";
+        menuHeader.style.translate = "0 0";
         backMenuHeader.style.backgroundColor = "#f5ab356c";
         backMenuHeader.style.transition = "all 0.75s";
         backMenuHeader.style.display = "block";
